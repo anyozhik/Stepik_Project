@@ -7,6 +7,7 @@ class MainPageLocators():
 class BasePageLocators():
     LOGIN_LINK=(By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID=(By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_LINK=(By.CSS_SELECTOR, 'a[class="btn btn-default"]')
 
 
 class LoginPageLocators():
@@ -21,6 +22,11 @@ class ProductPageLocators():
     BOOK_PRICE_2=(By.CSS_SELECTOR, "div[class='alertinner '] p strong")
     SUCCESS_MESSAGE=(By.CSS_SELECTOR, "#messages .alert.alert-safe.alert-noicon:nth-child(1)")
 
+
+class BasketPageLocators():
+    EMPTY_MESSAGE=(By.CSS_SELECTOR, "#content_inner p")
+    BASKET_ITEM=(By.CSS_SELECTOR, ".basket-items")
+    
 
  
 

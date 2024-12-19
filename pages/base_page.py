@@ -18,6 +18,10 @@ class BasePage():
         login_link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
         login_link.click()
 
+    def go_to_basket_page(self):
+        basket_link=self.browser.find_element(*BasePageLocators.BASKET_LINK)
+        basket_link.click()
+
 # is_disappeared: будет ждать до тех пор, пока элемент не исчезнет
     def is_disappeared(self, how, what, timeout=4):
         try:
